@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1> Add Topic </h1>
+        <form action= "/messageboard/SaveTopicServlet" method = "POST">
+            <div>
+                <label> Topic Name: </label>
+                <input type= "text" name="topicName" placeholder = "Enter Topic Name"/><br>
+                    <input type = "radio" name= "genre" value = "Music" checked> Music<br>
+                    <input type = "radio" name= "genre" value = "Sports"> Sports<br>
+                    <input type = "radio" name= "genre" value = "Politics"> Politics<br>
+                    <input type = "radio" name= "genre" value = "Food"> Food <br>
+                    <input type = "radio" name= "genre" value = "Random"> Random <br>
+                <input type = "submit" name = "submit" value = "submit"/>
+            </div>
+        </form>
+    </body>
+</html>
+
+\

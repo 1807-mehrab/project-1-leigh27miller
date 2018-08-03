@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link type = "text/css" rel = "stylesheet" href="userProfileAndDashboard.css">
+</head>
+<body>
+<div class="ACon">
+    <div class="Profile">
+        <div class="Img">
+            <div class="overlay">
+                <span><img /></span>
+            </div>
+        </div>
+
+        <div class = "box">
+
+            <form action="/messageboard/LogoutServlet" method="POST">
+
+                <button>Logout</button>
+
+            </form>
+            <br>
+
+            <form action="/messageboard/GetProfileServlet" method = "POST">
+
+                <button>Update Profile</button>
+
+            </form>
+            <br>
+
+            <a href="/messageboard/GetDashboardPostServlet">Dashboard</a>
+            <br>
+            <a href="/messageboard/GetTopicsServlet">Topics</a>
+            <br>
+
+            <a href="/messageboard/addTopic.html">Add Topic</a>
+
+        </div>
+
+    </div>
+</div>
+</div>
+</body>
+
+</html>

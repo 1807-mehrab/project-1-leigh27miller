@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
+<!DOCTYPE html>
+<html>
+<body>
+<h1> Replies </h1>
+
+<!--TODO: This will bring in data-->
+<div id = "replies">
+    <table>
+        <tr>
+            <th>Topic Id</th>
+            <th>Response</th>
+        </tr>
+        <c:forEach items="${allTopicsByTopicId}" var="post">
+            <tr>
+                <!-- the names of the variables must be the same name as model object -->
+                <td><c:out value="${post.postId}" /></td>
+                <td><c:out value="${post.text}" /></td>
+            </tr>
+        </c:forEach>
+    </table>
+</div>
+
+</body>
+</html>
